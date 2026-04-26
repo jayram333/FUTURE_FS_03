@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Rani&RajaSalon</title>
+<link rel="stylesheet" href="style.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+
+<!-- LOGIN MODAL -->
+<div class="modal-bg" id="modalBg">
+  <div class="modal">
+    <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
+    <div class="modal-logo"><span>✦</span>Rani&amp;RajaSalon</div>
+    <h2>WelcomeBack</h2>
+    <p>SignInToYourAccount</p>
+    <form id="loginForm">
+      <div class="mfg"><label>EmailAddress</label><input type="email" placeholder="you@example.com" required/></div>
+      <div class="mfg"><label>Password</label><input type="password" placeholder="••••••••" required/></div>
+      <div class="mrow"><label class="chk"><input type="checkbox"/>RememberMe</label><a href="#" class="forgot">ForgotPassword?</a></div>
+      <button type="submit" class="btn-login">SignIn</button>
+    </form>
+    <p class="signup-txt">DontHaveAnAccount?<a href="#" id="goSignup">SignUp</a></p>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-logo">
+    <span class="logo-sym">✦</span>
+    <span class="logo-txt">Rani&amp;RajaSalon</span>
+  </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#staff">OurTeam</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-actions">
+    <button class="btn-login-nav" id="openLogin"><i class="fas fa-user"></i>Login</button>
+    <a href="#contact" class="btn-book">BookNow</a>
+  </div>
+  <button class="ham" id="ham"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-ov"></div>
+  <img src="pic_5.webp" alt="hero" class="hero-bg"/>
+  <div class="hero-body">
+    <div class="htag">✦Est.2010✦</div>
+    <h1>PremiumSalon<br/><span>ForMen&amp;Women</span></h1>
+    <p>AuthenticIndianGroomingExperience—Visakhapatnam</p>
+    <div class="hbtns">
+      <a href="#services" class="btn-primary">OurServices</a>
+      <a href="#contact" class="btn-out">BookAppointment</a>
+    </div>
+    <div class="hstats">
+      <div class="hs"><b>12+</b><small>YearsExperience</small></div>
+      <div class="hs-div">|</div>
+      <div class="hs"><b>8000+</b><small>HappyClients</small></div>
+      <div class="hs-div">|</div>
+      <div class="hs"><b>20+</b><small>Experts</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-inner">
+    <span>✦BridalPackages</span><span>✦TraditionalHairTreatments</span>
+    <span>✦PremiumSkinCare</span><span>✦MensGroomingLounge</span>
+    <span>✦MehndiAndMakeup</span><span>✦WalkInsWelcome</span>
+    <span>✦BridalPackages</span><span>✦TraditionalHairTreatments</span>
+    <span>✦PremiumSkinCare</span><span>✦MensGroomingLounge</span>
+    <span>✦MehndiAndMakeup</span><span>✦WalkInsWelcome</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-imgs">
+        <div class="img-main"><img src="pic_1.webp" alt="IndianBarber"/></div>
+        <div class="img-sm"><img src="pic_8.webp" alt="FacialTreatment"/></div>
+        <div class="ab-badge"><b>★4.9</b><small>RatedSalon</small></div>
+      </div>
+      <div class="about-cnt">
+        <div class="stag">✦AboutUs</div>
+        <h2 class="stitle">Visakhapatnam's<em>MostTrustedSalon</em></h2>
+        <p class="a-lead">YourLookIsOurPassion.WeDeliver<strong>PremiumGrooming</strong>WithAPersonalTouch—RightHereInVisakhapatnam.</p>
+        <p class="a-body">FromClassicCutsToRoyalShaves,WeBlendTraditionalIndianTechniquesWithModernStyleToMakeYouLook&FeelYourAbsoluteBest.</p>
+        <div class="pillars">
+          <div class="pill"><i class="fas fa-leaf"></i><div><b>AyurvedicCare</b><p>NaturalHerbs&Oils</p></div></div>
+          <div class="pill"><i class="fas fa-crown"></i><div><b>RoyalExperience</b><p>LuxuryFromStartToFinish</p></div></div>
+          <div class="pill"><i class="fas fa-heart"></i><div><b>PersonalisedTouch</b><p>TailoredToYourBeauty</p></div></div>
+        </div>
+        <a href="#services" class="btn-primary">ViewServices</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="sec-hd center">
+      <div class="stag">✦WhatWeOffer</div>
+      <h2 class="stitle">Our<em>Services</em></h2>
+      <p class="ssub">IndulgeinacuratedselectionofBeauty&GroomingTreatments</p>
+    </div>
+    <div class="tabs">
+      <button class="tab active" data-t="women"><i class="fas fa-venus"></i>Women</button>
+      <button class="tab" data-t="men"><i class="fas fa-mars"></i>Men</button>
+    </div>
+
+    <!-- WOMEN -->
+    <div class="tp active" id="tp-women">
+      <div class="cards">
+        <div class="sc">
+          <div class="si"><img src="pic_3.webp" alt="HairStyling"/></div>
+          <div class="sb"><h3>HairStyling&Cut</h3><p>ExpertCutsBlowoutsKeratinTreatments&TraditionalOilMassagesUsingBrahmi&Amla.</p><div class="sf"><span class="pr">From₹500</span><a href="#contact">Book→</a></div></div>
+        </div>
+        <div class="sc pop">
+          <div class="pl">Popular</div>
+          <div class="si"><img src="pic_8.webp" alt="Facial"/></div>
+          <div class="sb"><h3>Facial&Skincare</h3><p>DeepcleansingubtanfacialsGoldfacials&AdvancedSkinBrighteningTreatments.</p><div class="sf"><span class="pr">From₹800</span><a href="#contact">Book→</a></div></div>
+        </div>
+        <div class="sc">
+          <div class="si"><img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&q=80" alt="Nails"/></div>
+          <div class="sb"><h3>NailArt&Manicure</h3><p>GelNailsNailArtwithIndianMotifsPedicure&ParraffinWaxTreatments.</p><div class="sf"><span class="pr">From₹400</span><a href="#contact">Book→</a></div></div>
+        </div>
+        <div class="sc">
+          <div class="si"><img src="https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?w=600&q=80" alt="Spa"/></div>
+          <div class="sb"><h3>BodyMassage&Spa</h3><p>AbhyangaOilMassageFootReflexologyDeepTissueTherapywithEssentialOils.</p><div class="sf"><span class="pr">From₹1200</span><a href="#contact">Book→</a></div></div>
+        </div>
+        <div class="sc">
+          <div class="si"><img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600&q=80" alt="Makeup"/></div>
+          <div class="sb"><h3>Makeup&Styling</h3><p>PartyMakeupSareeDrapingMehndiApplication&FullTransformation.</p><div class="sf"><span class="pr">From₹1500</span><a href="#contact">Book→</a></div></div>
+        </div>
+        <div class="sc">
+          <div class="si"><img src="https://images.unsplash.com/photo-1583427053865-12b0a56d20ea?w=600&q=80" alt="Threading"/></div>
+          <div class="sb"><h3>Threading&Waxing</h3><p>EyebrowThreadingFullBodyWaxingWithNaturalSugaring&HerbalWax.</p><div class="sf"><span class="pr">From₹150</span><a href="#contact">Book→</a></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MEN -->
+    <div class="tp" id="tp-men">
+      <div class="cards">
+        <div class="sc">
+          <div class="si"><img src="pic_5.webp" alt="Haircut"/></div>
+          <div class="sb"><h3>Haircut&Styling</h3><p>ModernCutsFades&TraditionalIndianBarbercutsWithHotTowelFinish.</p><div class="sf"><span class="pr">From₹300</span><a href="#contact">Book→</a></div></div>
+        </div>
+        <div class="sc pop">
+          <div class="pl">Popular</div>
+          <div class="si"><img src="pic_6.webp" alt="Beard"/></div>
+          <div class="sb"><h3>BeardShaping&Trim</h3><p>RoyalShaveBeardStylingDermaRollers&BeardOilTreatmentsForThickGrowth.</p><div class="sf"><span class="pr">From₹200</span><a href="#contact">Book→</a></div></div>
+        </div>
+        <div class="sc">
+          <div class="si"><img src="pic_4.webp" alt="MenFacial"/></div>
+          <div class="sb"><h3>MensFacial</h3><p>AntiAgeingDetanCharcoal&BrighteningFacialsDesignedForMensSkin.</p><div class="sf"><span class="pr">From₹600</span><a href="#contact">Book→</a></div></div>
+        </div>
+        <div class="sc">
+          <div class="si"><img src="pic_2.webp" alt="Shave"/></div>
+          <div class="sb"><h3>TraditionalShave</h3><p>ClassicIndianStraightRazorShaveWithHotTowelAndNaturalShavingCream.</p><div class="sf"><span class="pr">From₹150</span><a href="#contact">Book→</a></div></div>
+        </div>
+        <div class="sc">
+          <div class="si"><img src="pic_1.webp" alt="HairTreatment"/></div>
+          <div class="sb"><h3>HairTreatment</h3><p>DandruffControlHairFallReductionWithBhringraj&ScalpMassageWithNeemOil.</p><div class="sf"><span class="pr">From₹500</span><a href="#contact">Book→</a></div></div>
+        </div>
+        <div class="sc">
+          <div class="si"><img src="pic_7.webp" alt="MenSpa"/></div>
+          <div class="sb"><h3>MensSpaPackage</h3><p>FullBodyScrubSportsMassage&DetoxWrapForTheModernIndianMan.</p><div class="sf"><span class="pr">From₹1500</span><a href="#contact">Book→</a></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STAFF -->
+<section class="staff" id="staff">
+  <div class="container">
+    <div class="sec-hd center">
+      <div class="stag">✦MeetTheExperts</div>
+      <h2 class="stitle">Our<em>TalentedTeam</em></h2>
+      <p class="ssub">PassionateProfessionalsDedicatedToBringingOutYourBest</p>
+    </div>
+    <div class="staff-grid">
+      <div class="scard">
+        <div class="simg"><img src="pic_5.webp" alt="RahulVerma"/><div class="sov"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook"></i></a></div></div>
+        <div class="sinfo"><h3>RahulVerma</h3><span>MasterBarber&MensGrooming</span><p>8yearsExperience.ExpertInFadesBeardSculpting&TraditionalIndianBarbertechniques.</p><div class="skls"><em>Cuts</em><em>Beard</em><em>Shave</em></div></div>
+      </div>
+      <div class="scard">
+        <div class="simg"><img src="pic_6.webp" alt="ArjunPatel"/><div class="sov"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook"></i></a></div></div>
+        <div class="sinfo"><h3>ArjunPatel</h3><span>Mehndi&AyurvedicSpecialist</span><p>9yearsAwardWinningMehndiArtist&TrainedInTraditionalPanchakarmaTreatments.</p><div class="skls"><em>Mehndi</em><em>Ayurveda</em><em>Spa</em></div></div>
+      </div>
+      <div class="scard">
+        <div class="simg"><img src="pic_8.webp" alt="VikramSingh"/><div class="sov"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook"></i></a></div></div>
+        <div class="sinfo"><h3>VikramSingh</h3><span>HairColourTechnician</span><p>6years.LOréalCertified.SpecialisesInBalayageOmbre&KeratinSmoothing.</p><div class="skls"><em>Colour</em><em>Balayage</em><em>Keratin</em></div></div>
+      </div>
+      <div class="scard">
+        <div class="simg"><img src="pic_2.webp" alt="SureshKumar"/><div class="sov"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook"></i></a></div></div>
+        <div class="sinfo"><h3>SureshKumar</h3><span>SeniorBarber&FacialExpert</span><p>10yearsExperience.SpecialistInTraditionalShavingTechniques&MenSkincare.</p><div class="skls"><em>Shave</em><em>Facial</em><em>Grooming</em></div></div>
+      </div>
+      <div class="scard">
+        <div class="simg"><img src="pic_3.webp" alt="PriyaSharma"/><div class="sov"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook"></i></a></div></div>
+        <div class="sinfo"><h3>PriyaSharma</h3><span>HeadStylist&BridalExpert</span><p>12yearsExperience.SpecialisesinBollywoodinspiredLooks&IntricateStyling.</p><div class="skls"><em>Bridal</em><em>Hair</em><em>Makeup</em></div></div>
+      </div>
+      <div class="scard">
+        <div class="simg"><img src="pic_7.webp" alt="MeeraJoshi"/><div class="sov"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook"></i></a></div></div>
+        <div class="sinfo"><h3>MeeraJoshi</h3><span>NailArt&MakeupArtist</span><p>7yearsInstagramFamousNailArtist.ExpertIn3DNailArt&FestiveIndianDesigns.</p><div class="skls"><em>Nails</em><em>Art</em><em>Makeup</em></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="sec-hd center">
+      <div class="stag">✦OurWork</div>
+      <h2 class="stitle">Beauty<em>Gallery</em></h2>
+    </div>
+    <div class="gal-grid">
+      <div class="gi gtall"><img src="pic_1.webp" alt="IndianBarberShop"/><div class="gcap">IndianBarberShop</div></div>
+      <div class="gi"><img src="pic_2.webp" alt="TraditionalShave"/><div class="gcap">TraditionalShave</div></div>
+      <div class="gi"><img src="pic_3.webp" alt="OutdoorSalon"/><div class="gcap">OutdoorSalon</div></div>
+      <div class="gi gwide"><img src="pic_4.webp" alt="HairColouring"/><div class="gcap">HairColouring</div></div>
+      <div class="gi"><img src="pic_5.webp" alt="HaircutMirror"/><div class="gcap">HaircutMirror</div></div>
+      <div class="gi gtall"><img src="pic_6.webp" alt="BeardTrim"/><div class="gcap">BeardTrim</div></div>
+      <div class="gi"><img src="pic_7.webp" alt="MirrorShave"/><div class="gcap">MirrorShave</div></div>
+      <div class="gi"><img src="pic_8.webp" alt="FacialTreatment"/><div class="gcap">FacialTreatment</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="cg">
+      <div class="cl2">
+        <div class="stag">✦GetInTouch</div>
+        <h2 class="stitle">BookYour<em>Appointment</em></h2>
+        <p>StepIntoLuxury.WalkOutTransformed.VisitUsOrReachOut!</p>
+        <div class="citems">
+          <div class="ci"><i class="fas fa-map-marker-alt"></i><div><b>Address</b><p>Rani&RajaSalon,Duvvada,Visakhapatnam,AndhraPradesh-532049</p></div></div>
+          <div class="ci"><i class="fas fa-phone"></i><div><b>Phone</b><p>+919876543210</p></div></div>
+          <div class="ci"><i class="fas fa-envelope"></i><div><b>Email</b><p>balakrishna@gmail.com</p></div></div>
+          <div class="ci"><i class="fas fa-clock"></i><div><b>Hours</b><p>Mon-Sat:9am-9pm|Sun:10am-7pm</p></div></div>
+        </div>
+        <div class="csoc">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="cr">
+        <form id="cForm">
+          <h3>RequestAnAppointment</h3>
+          <div class="row2">
+            <div class="fg"><label>YourName</label><input type="text" placeholder="YourFullName" required/></div>
+            <div class="fg"><label>PhoneNumber</label><input type="tel" placeholder="+91XXXXXXXXXX" required/></div>
+          </div>
+          <div class="fg"><label>EmailAddress</label><input type="email" placeholder="balakrishnagedela@gmail.com" required/></div>
+          <div class="row2">
+            <div class="fg"><label>Service</label>
+              <select required>
+                <option value="">SelectService</option>
+                <option>HairStyling(Women)</option>
+                <option>Facial&Skincare</option>
+                <option>NailArt</option>
+                <option>MehndiArt</option>
+                <option>MensHaircut</option>
+                <option>BeardStyling</option>
+                <option>MensFacial</option>
+                <option>Spa&Massage</option>
+                <option>TraditionalShave</option>
+              </select>
+            </div>
+            <div class="fg"><label>PreferredDate</label><input type="date" required/></div>
+          </div>
+          <div class="fg"><label>Message(Optional)</label><textarea rows="3" placeholder="AnySpecialRequests..."></textarea></div>
+          <button type="submit" class="btn-primary bfull"><i class="fas fa-calendar-check"></i>ConfirmBooking</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="ftop">
+    <div class="fb">
+      <div class="flogo"><span>✦</span>Rani&amp;RajaSalon</div>
+      <p>WhereEveryVisitIsARitual.CelebratingIndianBeauty,Heritage&You—Visakhapatnam.</p>
+      <div class="fsoc">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+    <div class="fl">
+      <h4>QuickLinks</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">AboutUs</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#staff">OurTeam</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="fl">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#services">HairStyling</a></li>
+        <li><a href="#services">MehndiArt</a></li>
+        <li><a href="#services">MensGrooming</a></li>
+        <li><a href="#services">AyurvedicSpa</a></li>
+        <li><a href="#services">NailArt</a></li>
+        <li><a href="#services">TraditionalShave</a></li>
+      </ul>
+    </div>
+    <div class="fn">
+      <h4>StayInTouch</h4>
+      <p>GetExclusiveOffers&BeautyTipsDeliveredToYourInbox.</p>
+      <div class="nf"><input type="email" placeholder="YourEmailAddress"/><button><i class="fas fa-paper-plane"></i></button></div>
+      <div class="faddr">
+        <p><i class="fas fa-map-marker-alt"></i>Visakhapatnam,AndhraPradesh-532049</p>
+        <p><i class="fas fa-envelope"></i>balakrishna@gmail.com</p>
+      </div>
+    </div>
+  </div>
+  <div class="fbot">
+    <p>©2025Rani&amp;RajaSalon,Visakhapatnam.AllRightsReserved.</p>
+    <p>DesignedWith<span style="color:#f44">♥</span>InIndia</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast"><i class="fas fa-check-circle"></i><span>AppointmentBooked!WellCallYouSoon.</span></div>
+<button class="btt" id="btt"><i class="fas fa-chevron-up"></i></button>
+
+<script src="script.js"></script>
+</body>
+</html>
